@@ -1,0 +1,69 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "LINTING: flake8 & pylint",
+        "type": "shell",
+        "command": "flake8 && pylint *.py",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "DJANGO: Runserver",
+        "type": "shell",
+        "command": "./scripts/runserver.sh",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        },
+        "options": {
+          "cwd": "${workspaceFolder}/.vscode/"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "PIP: Freeze",
+        "type": "shell",
+        "command": "./scripts/pip_freeze.sh",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        },
+        "options": {
+          "cwd": "${workspaceFolder}/.vscode/"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "PIP: First launch",
+        "type": "shell",
+        "command": "./scripts/pip_installs.sh",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        },
+        "options": {
+          "cwd": "${workspaceFolder}/.vscode/"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "TEST: Tests coverage",
+        "type": "shell",
+        "command": "./scripts/tests_coverage.sh",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        },
+        "options": {
+          "cwd": "${workspaceFolder}/.vscode/"
+        },
+        "problemMatcher": []
+      }
+    ]
+  }

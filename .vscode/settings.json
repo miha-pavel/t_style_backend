@@ -1,0 +1,77 @@
+{
+    "cSpell.words": [
+        "Authorised",
+        "QWER"
+    ],
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.languageServer": "Pylance",
+    "python.analysis.indexing": true,
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "django",
+            "depth": 3,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "flask",
+            "depth": 3,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "fastapi",
+            "depth": 3,
+            "includeAllSymbols": true
+        }
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    "python.analysis.importFormat": "absolute",
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.enablePytestSupport": true,
+    "python.testing.unittestArgs": ["-v","-s",".","-p","test_*.py"],
+    "python.testing.cwd": "tests",
+
+    "pylint.args": ["--rcfile=${workspaceFolder}/.pylintrc"],
+
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/*/*.html": "django-html",
+        "**/templates/*/*/*.html": "django-html",
+        "**/templates/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    },
+    "django.snippets.exclude": [
+        "cms",
+        "wagtail"
+    ],
+    "[django-html]": {
+        "breadcrumbs.showClasses": true,
+        "editor.defaultFormatter": "batisteo.vscode-django",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        },
+        "editor.formatOnSave": true
+    },
+    "auto-close-tag.disableOnLanguage": [],
+    "diffEditor.wordWrap": "on",
+    "vscode-postgres.defaultDatabase": "reventador_web_api",
+    "files.watcherExclude": {
+        "**/target": true
+    },
+}

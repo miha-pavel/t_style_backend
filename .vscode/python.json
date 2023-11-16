@@ -1,0 +1,8 @@
+{
+    "Datestamped Todo": {
+        "prefix": "todo",
+        "body": [
+            "# TODO $CURRENT_MONTH_NAME $CURRENT_DATE, $CURRENT_YEAR: "
+        ]
+    }
+}

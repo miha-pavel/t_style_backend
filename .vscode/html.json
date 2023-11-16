@@ -1,0 +1,48 @@
+{
+    // https://www.willandskill.se/sv/articles/custom-code-snippets-in-vs-code-for-your-django-project
+    // https://marketplace.visualstudio.com/items?itemName=StuartElimu.django-template-snippets
+    "Django Template extending layout.html": {
+        "prefix": "dj_ext_layout",
+        "body": [
+            "{% extends \"hello/layout.html\" %}",
+            "{% block title %}",
+            "$0",
+            "{% endblock %}",
+            "{% block content %}",
+            "{% endblock %}"
+        ],
+        "description": "Boilerplate template that extends layout.html"
+    },
+    "Django Template If Statement": {
+        "prefix": "dj_if",
+        "body": [
+            "{% if $1 %}",
+            "\t$0",
+            "{% endif %}"
+        ]
+    },
+    "Django Template For Loop": {
+        "prefix": "dj_for",
+        "body": [
+            "{% for $1 in $2 %}",
+            "\t$0",
+            "{% enfor %}"
+        ]
+    },
+    "Django Template Load": {
+        "prefix": "dj_load",
+        "body": "{% load $1 %}"
+    },
+    "Django Template Extends": {
+        "prefix": "dj_ext",
+        "body": "{% extends \"$1\" %}"
+    },
+    "Django Template Block": {
+        "prefix": "dj_block",
+        "body": [
+            "{% block $1 %}",
+            "\t$0",
+            "{% endblock $1 %}"
+        ]
+    },
+}

@@ -1,0 +1,33 @@
+#!/bin/bash
+
+code --install-extension 42Crunch.vscode-openapi
+code --install-extension AhadCove.python-quick-print
+code --install-extension alefragnani.project-manager
+code --install-extension almenon.arepl
+code --install-extension batisteo.vscode-django
+code --install-extension ckolkman.vscode-postgres
+code --install-extension donjayamanne.githistory
+code --install-extension eamodio.gitlens
+code --install-extension esbenp.prettier-vscode
+code --install-extension formulahendry.auto-close-tag
+code --install-extension formulahendry.auto-rename-tag
+code --install-extension KevinRose.vsc-python-indent
+code --install-extension mgesbert.python-path
+code --install-extension mhutchie.git-graph
+code --install-extension ms-python.black-formatter
+code --install-extension ms-python.flake8
+code --install-extension ms-python.pylint
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
+code --install-extension oderwat.indent-rainbow
+code --install-extension PKief.material-icon-theme
+code --install-extension pranaygp.vscode-css-peek
+code --install-extension redhat.vscode-yaml
+code --install-extension ritwickdey.LiveServer
+code --install-extension shardulm94.trailing-spaces
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension VisualStudioExptTeam.intellicode-api-usage-examples
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension vscode-icons-team.vscode-icons
+code --install-extension ZainChen.json
+code --install-extension Zignd.html-css-class-completion
