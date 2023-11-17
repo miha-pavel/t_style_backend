@@ -39,3 +39,6 @@ sqldiff:
 
 valid_t:
 	./manage.py validate_templates
+
+startapp: ## c=<application name>
+	python manage.py startapp $(c)
